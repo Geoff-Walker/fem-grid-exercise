@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed';
+    font-size: 13px;
+    height: 100vh;
+    width: 100%;   
+}
+
+main {
+    width: 1110px;
+    height: 570px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 25px;
+    transform: translateY(25%);
+    position: relative;
+}
+    @media screen and (max-width: 1150px) {
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            transform: translateY(10%)
+        }
+    }
+
+
+.card {
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+}
+
+.img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px; 
+}
+
+.head { display: flex;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 15px;
+}
+
+.identity {
+    padding-left: 15px;
+   
+}
+
+.overview {
+    padding: 0 30px;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.detail {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+}
+
+
+
+.img-dc {
+    border: 2px solid hsla(0, 0%, 100%, 50%);
+}
+
+.img-pa {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+
+.head-1 {
+    font-size: 13px;
+}
+
+.head-2 {
+    opacity: 0.5;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.detail {
+    opacity: 0.7;
+}
+
+.card-dc {
+    background-color: hsla(263, 55%, 52%, 100%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 350px;
+    background-size: 20%;
+    
+    grid-column: 1 / 3;
+}
+
+.detail-dc {
+ padding-right: 20px; 
+}
+
+
+.overview-jh {
+    padding-right: 35px;
+}
+
+.card-jw {
+    background-color: hsl(217, 19%, 35%);
+    
+}
+
+.card-jh {
+    background-color: white;
+    color: hsl(219, 29%, 14%);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+.card-pa {
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+
+.card-kw {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+    grid-column: 4/5;
+    grid-row: 1/-1;
+
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
